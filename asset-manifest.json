@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PortFolio-Using-TypeScript/static/css/main.308efe2f.css",
+    "main.js": "/PortFolio-Using-TypeScript/static/js/main.3a06a1a5.js",
+    "static/js/453.acca0757.chunk.js": "/PortFolio-Using-TypeScript/static/js/453.acca0757.chunk.js",
+    "index.html": "/PortFolio-Using-TypeScript/index.html",
+    "main.308efe2f.css.map": "/PortFolio-Using-TypeScript/static/css/main.308efe2f.css.map",
+    "main.3a06a1a5.js.map": "/PortFolio-Using-TypeScript/static/js/main.3a06a1a5.js.map",
+    "453.acca0757.chunk.js.map": "/PortFolio-Using-TypeScript/static/js/453.acca0757.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.308efe2f.css",
+    "static/js/main.3a06a1a5.js"
+  ]
+}
