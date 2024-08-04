@@ -8,7 +8,7 @@ import { Button } from "@mantine/core";
 const About = () => {
 
   const handleOpenPdf = () => {
-    const pdfUrl = '/Avantika_Deshmukh_PDF-1-2.pdf'; // Update this path as needed
+    const pdfUrl = 'https://aavdisd07.github.io/PortFolio-Using-TypeScript/Avantika_Deshmukh_PDF-1-2.pdf'; // Update this path as needed
     window.open(pdfUrl, '_blank'); // Open the PDF in a new tab
   };
   
