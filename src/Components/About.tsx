@@ -93,7 +93,9 @@ const About = () => {
           size="lg"
           variant="filled"
           color="#64FFDA"
-          component="a" href="https://github.com/aavdisd07/PortFolio-Using-TypeScript/blob/main/public/Avantika_Deshmukh_Resume%20(2).pdf" target="_blank"
+          component="a"
+          href="https://github.com/aavdisd07/PortFolio-Using-TypeScript/blob/main/public/Avantika_Deshmukh_Resume%20(2).pdf"
+          target="_blank"
           className="!text-bgColor  !w-fit "
         >
           Check Resume
@@ -101,11 +103,16 @@ const About = () => {
       </div>
       <div
         id="photo"
-        className=" flex justify-center items-center h-[50vh] w-[25vw]  rounded-full overflow-hidden mr-14"
+        className=" flex justify-center items-center h-[50vh] w-[25vw]  ml-10 rounded-full overflow-hidden "
       >
         <img
-          className="w-[83%] rounded-full shadow-xl"
-          src="https://i.pinimg.com/564x/df/a7/97/dfa797f0ff64c94bd10de366a3b1da07.jpg"
+          className="  h-[80%] rounded-fit "
+          // src="https://i.pinimg.com/564x/07/7a/c6/077ac63ccb6633e765f5afc9abef8cfe.jpg"
+      //  src="{/Images/${myimg.imgSrc}} "
+
+      //  src={`/Images/${myimg.imgSrc}`} 
+      src={`/Images/${my-image.imgSrc}`}
+          // src="C:\Users\Rohit Deshmukh\OneDrive - SHRI GURU GOBIND SINGHJI INSTITUTE OF ENGINEERING AND TECHNOLOGY\Pictures\myimage.jpg"          
           alt="mypic"
         />
       </div>
