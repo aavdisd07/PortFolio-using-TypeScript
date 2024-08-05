@@ -15,7 +15,7 @@ const SideBar = () => {
   return (
     <>
       <Drawer.Root
-        className="md:hidden !-z-10 "
+        className=" md:hidden!-z-10 "
         size="50vw"
         position="right"
         opened={opened}

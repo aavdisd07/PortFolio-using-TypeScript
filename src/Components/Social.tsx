@@ -20,7 +20,8 @@ const Social = () => {
   });
 
   return (
-    <div className="fixed bottom-40 -left-40 transform -translate-y-1/2 rotate-90 flex items-center text-textColor gap-10">
+    <div className="fixed bottom-40 -left-40 transform -translate-y-1/2 rotate-90 flex items-center text-textColor gap-10
+    ">
     {SocialIcons}
      <hr className="border-2 w-40 rounded-full bg-textColor border-textColor" />
     </div>

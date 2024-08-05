@@ -7,9 +7,7 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      <About /> */
-       /* <Mail /> */
-        /* <Social />
+      <About /> */ /* <Mail /> */ /* <Social />
     </>
   );
 };
