@@ -93,7 +93,7 @@ const About = () => {
           size="lg"
           variant="filled"
           color="#64FFDA"
-          component="a" href="/Avantika_Deshmukh_Resume (2).pdf" target="_blank"
+          component="a" href="https://github.com/aavdisd07/PortFolio-Using-TypeScript/blob/main/public/Avantika_Deshmukh_Resume%20(2).pdf" target="_blank"
           className="!text-bgColor  !w-fit "
         >
           Check Resume
