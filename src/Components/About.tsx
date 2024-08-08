@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
 import { Info } from "../Users";
+import myImage from '../assets/myimg.png';
 //@ts-ignore
 import DOTS from "vanta/src/vanta.dots";
 //@ts-ignore
 import Halo from "vanta/src/vanta.halo";
-import { Button } from "@mantine/core";
+import { BackgroundImage, Button } from "@mantine/core";
 
 const About = () => {
   // const handleOpenPdf = () => {
@@ -46,18 +47,19 @@ const About = () => {
           gyroControls: false,
           minHeight: 200.0,
           minWidth: 200.0,
-          baseColor: 0x18b8c0,
-          backgroundColor: 0x1f1c1c,
-          // baseColor: 0xde8614,
+          // baseColor: 0x18b8c0,
           // backgroundColor: 0x1f1c1c,
+          baseColor: 0xde8614,
+          backgroundColor: 0x1f1c1c,
+          // BackgroundColor:#112240,
 
           // baseColor: 0xa63d08,
           // backgroundColor: 0x07edda,
 
-          amplitudeFactor: 6.4,
-          xOffset: 0.1,
-          yOffset: 0.02,
-          size: 1.7,
+          amplitudeFactor: 9.8,
+          xOffset: 0.5,
+          yOffset: 0.10,
+          size: 1.9,
         })
       );
     }
@@ -70,7 +72,7 @@ const About = () => {
 
   return (
     <div
-      className="flex  overflow-hidden font-mono px-16 items-center justify-around  h-[80vh] "
+      className="flex  overflow-hidden font-mono px-16  items-center justify-around md:!h-[80vh] "
       id="bg"
     >
       <div className="ml-20  w-3/5 flex flex-col  ">
@@ -102,20 +104,15 @@ const About = () => {
         </Button>
       </div>
       <div
-        id="photo"
-        className=" flex justify-center items-center h-[50vh] w-[25vw]  ml-10 rounded-full overflow-hidden "
-      >
-        <img
-          className="  h-[80%] rounded-fit "
-          // src="https://i.pinimg.com/564x/07/7a/c6/077ac63ccb6633e765f5afc9abef8cfe.jpg"
-      //  src="{/Images/${myimg.imgSrc}} "
-
-      //  src={`/Images/${myimg.imgSrc}`} 
-      src={`/Images/${my-image.imgSrc}`}
-          // src="C:\Users\Rohit Deshmukh\OneDrive - SHRI GURU GOBIND SINGHJI INSTITUTE OF ENGINEERING AND TECHNOLOGY\Pictures\myimage.jpg"          
-          alt="mypic"
-        />
-      </div>
+      id="photo"
+      className="flex justify-center items-center h-[50vh] w-[25vw] rounded-full overflow-hidden ml-14"
+    >
+      <img
+        className="object-cover rounded-full  w-[90%] h-[90%] object-top"
+        src={myImage}
+        alt="mypic"
+      />
+    </div>
     </div>
   );
 };
