@@ -7,13 +7,13 @@ import DOTS from "vanta/src/vanta.dots";
 //@ts-ignore
 import Halo from "vanta/src/vanta.halo";
 import { BackgroundImage, Button } from "@mantine/core";
+import { useDisclosure } from "@mantine/hooks";
+import ResumeViewer from "./ResumeViewer";
+import { IconDownload } from "@tabler/icons-react";
 
 const About = () => {
-  // const handleOpenPdf = () => {
-  //   const pdfUrl =
-  //     "https://aavdisd07.github.io/PortFolio-Using-TypeScript/Avantika_Deshmukh_PDF-1-2.pdf"; // Update this path as needed
-  //   window.open(pdfUrl, "_blank");
-  // };
+
+ const [opened,{open,close}]=useDisclosure(false);
 
   const [dots, setDots] = useState<any>(null);
   const [halo, setHalo] = useState<any>(null);
@@ -71,6 +71,7 @@ const About = () => {
   }, []);
 
   return (
+    <>
     <div
       className="flex  overflow-hidden font-mono px-16  items-center justify-around md:!h-[80vh] "
       id="bg"
@@ -91,29 +92,42 @@ const About = () => {
         <div className="text-textColor text-xl font-semibold my-5 text-justify w-[90%]">
           {Info.bio}
         </div>
-        <Button
+        <div className="flex gap-3">
+        <Button 
+        onClick={open}
           size="lg"
           variant="filled"
           color="#64FFDA"
-          component="a"
-          href="https://github.com/aavdisd07/PortFolio-Using-TypeScript/blob/main/public/Avantika_Deshmukh_Resume%20(2).pdf"
-          target="_blank"
           className="!text-bgColor  !w-fit "
         >
           Check Resume
         </Button>
+        <Button 
+         component="a" href="/Avantika_Resume.pdf" download="AvantikaDeshmukhResume"
+          size="lg"
+          variant="outline" 
+          color="#64FFDA"
+          className="!text-primaryColor  !w-fit "
+          rightSection={<IconDownload size={20}/>}
+ >
+          Download
+        </Button>
+        </div>
+       
       </div>
       <div
       id="photo"
       className="flex justify-center items-center h-[50vh] w-[25vw] rounded-full overflow-hidden ml-14"
     >
       <img
-        className="object-cover rounded-full  w-[90%] h-[90%] object-top"
+        className="object-cover rounded-full  w-[90%] h-[90%] object-top object-fit-cover"
         src={myImage}
         alt="mypic"
       />
     </div>
     </div>
+    <ResumeViewer opened={opened} close={close}/>
+    </>
   );
 };
 

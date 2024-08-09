@@ -1,6 +1,7 @@
 import About from "./About";
 import Contact from "./Contact";
 import Experience from "./Experience";
+import Footer from "./Footer";
 import Header from "./Header";
 import Mail from "./Mail";
 import Project from "./Project";
@@ -16,6 +17,7 @@ const HomePage = () => {
       <Skills/>
       <Experience/>
       <Contact/>
+      <Footer/>
        <Mail /> 
       <Social />
     </>
