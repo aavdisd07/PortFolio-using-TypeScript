@@ -103,7 +103,7 @@ const About = () => {
           Check Resume
         </Button>
         <Button 
-         component="a" href="/Avantika_Resume.pdf" download="AvantikaDeshmukhResume"
+         component="a" href="Avantika_Resume.pdf" download="AvantikaDeshmukhResume"
           size="lg"
           variant="outline" 
           color="#64FFDA"
