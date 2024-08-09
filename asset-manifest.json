@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/PortFolio-Using-TypeScript/static/css/main.8b8276c6.css",
-    "main.js": "/PortFolio-Using-TypeScript/static/js/main.52d27b6e.js",
+    "main.css": "/PortFolio-Using-TypeScript/static/css/main.b3175cf9.css",
+    "main.js": "/PortFolio-Using-TypeScript/static/js/main.18dfea63.js",
     "static/js/453.acca0757.chunk.js": "/PortFolio-Using-TypeScript/static/js/453.acca0757.chunk.js",
+    "static/media/pdf.worker.min.mjs": "/PortFolio-Using-TypeScript/static/media/pdf.worker.min.fc2d5228acb797720110.mjs",
     "static/media/myimg.png": "/PortFolio-Using-TypeScript/static/media/myimg.28785e5591873e7ac49e.png",
     "index.html": "/PortFolio-Using-TypeScript/index.html",
-    "main.8b8276c6.css.map": "/PortFolio-Using-TypeScript/static/css/main.8b8276c6.css.map",
-    "main.52d27b6e.js.map": "/PortFolio-Using-TypeScript/static/js/main.52d27b6e.js.map",
+    "main.b3175cf9.css.map": "/PortFolio-Using-TypeScript/static/css/main.b3175cf9.css.map",
+    "main.18dfea63.js.map": "/PortFolio-Using-TypeScript/static/js/main.18dfea63.js.map",
     "453.acca0757.chunk.js.map": "/PortFolio-Using-TypeScript/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b8276c6.css",
-    "static/js/main.52d27b6e.js"
+    "static/css/main.b3175cf9.css",
+    "static/js/main.18dfea63.js"
   ]
 }
