@@ -1,7 +1,7 @@
 {
   "name": "my_portfolio",
   "version": "0.1.0",
-  "homepage": "https://aavdisd07.github.io/PortFolio-Using-TypeScript",
+  "homepage": "https://aavdisd07.github.io/PortFolio-ASD",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.0",
