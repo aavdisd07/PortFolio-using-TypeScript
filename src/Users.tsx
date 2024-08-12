@@ -1,7 +1,27 @@
+import {
+  IconBrandGithub,
+  IconBrandHackerrank,
+  IconBrandLeetcode,
+  IconBrandLinkedin,
+} from "@tabler/icons-react";
+
 const Info = {
   stack: ["Frontend Developer", "UX/UI Designer", ""],
   bio: " Student of Information Technology with a strong passion for frontend development and UI/UX design. With hands-on experience in creating responsive websites and applications using HTML, CSS, JavaScript, React, and Flutter, I am proficient in delivering user-friendly and visually appealing digital solutions",
 };
+
+const SocialLinks = [
+  { link: "https://github.com/aavdisd07", icon: IconBrandGithub },
+  {
+    link: "https://www.hackerrank.com/profile/2021bit153",
+    icon: IconBrandHackerrank,
+  },
+  { link: "https://leetcode.com/u/2021bit153/", icon: IconBrandLeetcode },
+  {
+    link: "https://www.linkedin.com/in/avantikadeshmukh/",
+    icon: IconBrandLinkedin,
+  },
+];
 
 const ProjectInfo = [
   {
@@ -170,17 +190,7 @@ const ExperienceInfo = [
     company: "airtel",
     date: "oct-34",
     desc: "lorem3  Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi doloribus at nobis deleniti quis pariatur blanditiis magnam repudiandae assumenda atque?",
-    skills: [
-      "Html",
-      "css",
-      "Html",
-      "css",
-      "Html",
-      "css",
-      "Html",
-      "css",
-      
-    ],
+    skills: ["Html", "css", "Html", "css", "Html", "css", "Html", "css"],
   },
   {
     role: "Web developer",
@@ -204,4 +214,37 @@ const ExperienceInfo = [
   },
 ];
 
-export { Info, ProjectInfo, SkillInfo, ExperienceInfo };
+const Slugs = [
+  "typescript",
+  "javascript",
+  "dart",
+  "java",
+  "react",
+  "flutter",
+  "android",
+  "html5",
+  "css3",
+  "nodedotjs",
+  "express",
+  "nextdotjs",
+  "prisma",
+  "amazonaws",
+  "postgresql",
+  "firebase",
+  "nginx",
+  "vercel",
+  "testinglibrary",
+  "jest",
+  "cypress",
+  "docker",
+  "git",
+  "jira",
+  "github",
+  "gitlab",
+  "visualstudiocode",
+  "androidstudio",
+  "sonarqube",
+  "figma",
+];
+
+export { Info, ProjectInfo, SkillInfo, SocialLinks, ExperienceInfo, Slugs };

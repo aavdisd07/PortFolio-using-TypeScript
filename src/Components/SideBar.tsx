@@ -24,10 +24,10 @@ const SideBar = () => {
         <Drawer.Overlay
           className="!-z-0"
           style={{ backgroundOpacity: 0.5, blur: 4 }}
-        />  
+        />
         <Drawer.Content className="!-z-0  h-50" bg="#0A192F">
           <Drawer.Body className="mt-20 flex flex-col gap-6 " bg="#0A192F">
-            {navLinks(true)}
+            {navLinks(true, toggle)}
           </Drawer.Body>
         </Drawer.Content>
       </Drawer.Root>

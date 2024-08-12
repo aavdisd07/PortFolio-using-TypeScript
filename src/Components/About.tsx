@@ -1,132 +1,104 @@
-import React, { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
 import { Info } from "../Users";
-import myImage from '../assets/myimg.png';
-//@ts-ignore
-import DOTS from "vanta/src/vanta.dots";
+import myImage from "../assets/myimg.jpg";
+import { useMatches } from "@mantine/core";
 //@ts-ignore
 import Halo from "vanta/src/vanta.halo";
-import { BackgroundImage, Button } from "@mantine/core";
+import { Button } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import ResumeViewer from "./ResumeViewer";
 import { IconDownload } from "@tabler/icons-react";
-
+import Particles from "./magicui/Particle";
+import { NeonGradientCard } from "./magicui/neon-gradient-card";
 const About = () => {
+const [opened, { open, close }] = useDisclosure(false);
 
- const [opened,{open,close}]=useDisclosure(false);
-
-  const [dots, setDots] = useState<any>(null);
-  const [halo, setHalo] = useState<any>(null);
-
-  useEffect(() => {
-    if (!dots) {
-      setDots(
-        DOTS({
-          el: "#bg",
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.0,
-          minWidth: 200.0,
-          scale: 1.0,
-          scaleMobile: 1.0,
-          color2: 0x102586,
-          size: 3,
-          showLines: false,
-          backgroundColor: 0x112240,
-          spacing: 20,
-        })
-      );
-    }
-    if (!halo) {
-      setHalo(
-        Halo({
-          el: "#photo",
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.0,
-          minWidth: 200.0,
-          // baseColor: 0x18b8c0,
-          // backgroundColor: 0x1f1c1c,
-          baseColor: 0xde8614,
-          backgroundColor: 0x1f1c1c,
-          // BackgroundColor:#112240,
-
-          // baseColor: 0xa63d08,
-          // backgroundColor: 0x07edda,
-
-          amplitudeFactor: 9.8,
-          xOffset: 0.5,
-          yOffset: 0.10,
-          size: 1.9,
-        })
-      );
-    }
-
-    return () => {
-      if (dots) dots.destroy();
-      if (halo) halo.destroy();
-    };
-  }, []);
-
+  const btn = useMatches({
+    xs: "xs",
+    sm: "sm",
+    md: "md",
+    lg: "lg",
+  });
   return (
     <>
-    <div
-      className="flex  overflow-hidden font-mono px-16  items-center justify-around md:!h-[80vh] "
-      id="bg"
-    >
-      <div className="ml-20  w-3/5 flex flex-col  ">
-        <div className="text-3xl text-primaryColor">Hii, I am</div>
-        <div className="text-white  text-[4rem] font-extrabold">
-          Avantika Deshmukh
-        </div>
-        <div className=" text-white text-4xl flex font-semibold">
-          I'm a &nbsp;
-          <span className=" text-primaryColor">
-            <Typewriter
-              options={{ strings: Info.stack, autoStart: true, loop: true }}
-            />
-          </span>
-        </div>
-        <div className="text-textColor text-xl font-semibold my-5 text-justify w-[90%]">
-          {Info.bio}
-        </div>
-        <div className="flex gap-3">
-        <Button 
-        onClick={open}
-          size="lg"
-          variant="filled"
-          color="#64FFDA"
-          className="!text-bgColor  !w-fit "
-        >
-          Check Resume
-        </Button>
-        <Button 
-         component="a" href="Avantika_Resume.pdf" download="AvantikaDeshmukhResume"
-          size="lg"
-          variant="outline" 
-          color="#64FFDA"
-          className="!text-primaryColor  !w-fit "
-          rightSection={<IconDownload size={20}/>}
- >
-          Download
-        </Button>
-        </div>
-       
-      </div>
+      <Particles
+          className=" -z-20 absolute inset-0"
+          quantity={500}
+          ease={60}
+          color={"#C0C0C01"}
+          size={2.5}
+          refresh
+        />
       <div
-      id="photo"
-      className="flex justify-center items-center h-[50vh] w-[25vw] rounded-full overflow-hidden ml-14"
-    >
-      <img
-        className="object-cover rounded-full  w-[90%] h-[90%] object-top object-fit-cover"
-        src={myImage}
-        alt="mypic"
-      />
-    </div>
-    </div>
-    <ResumeViewer opened={opened} close={close}/>
+        className="flex relative overflow-hidden font-mono px-10 sm-mx:px-4 xs-mx:py-4 xs-mx:px-2 py-10 items-center justify-around h-fit lg-mx:justify-between bs-mx:flex-wrap bs-mx:flex-col-reverse  bs-mx:!overflow-visible bs-mx:gap-6 md-mx:px-6"
+        id="bg"
+        data-aos="fade-down"
+        data-aos-duration="800"
+      >
+        <Particles
+          className=" -z-20 absolute inset-0"
+          quantity={500}
+          ease={60}
+          color={"#C0C0C0"}
+          size={2.5}
+          refresh
+        />
+        <div className="bs:ml-10  bs:w-3/5 flex flex-col lg-mx:gap-3 bs-mx:items-center">
+          <div className="text-3xl text-primaryColor lg-mx:text-2xl xs-mx:text-xl xsm-mx:text-lg">
+            Hii, I am
+          </div>
+          <div className="text-transparent bg-gradient-to-t from-black to-gray-300/80 bg-clip-text  dark:from-white dark:to-slate-900/10 blend-darken  text-[4.25rem] font-bold  sm-mx:text-4xl xs-mx:text-3xl lg-mx:text-center lg-mx:text-5xl">
+            Avantika Deshmukh
+          </div>
+          <div className=" text-white text-4xl flex font-semibold xs-mx:text-xl sm-mx:text-2xl lg-mx:text-[27px] xsm-mx:text-lg">
+            I'm a &nbsp;
+            <span className="text-[#DAFA66]">
+              <Typewriter
+                options={{ strings: Info.stack, autoStart: true, loop: true }}
+              />
+            </span>
+          </div>
+          <div className="text-textColor text-xl font-semibold my-8  lg-mx:my-0 text-justify w-[90%] sm-mx:text-sm  xs-mx:text-xs lg-mx:text-base xsm-mx:text-[27px] ">
+            {Info.bio}
+          </div>
+          <div className="flex gap-3">
+            <Button
+              // onClick={open}
+              component="a"
+              href="https://github.com/aavdisd07/All-My-Certifications-/blob/main/Avantika_Resume.pdf" 
+              target="_blank"
+              className="  focus-visible:!outline-none !text-black !w-fit xs-mx:!w-[46%]"
+              size={btn}
+              variant="filled"
+              color="#DAFA66"
+            >
+              Check Resume
+            </Button>
+            <Button
+              component="a"
+              href="Avantika_Resume.pdf"
+              download="AvantikaDeshmukhResume"
+              className="focus-visible:!outline-none !text-primaryColor !w-fit xs-mx:!w-[46%]"
+              size={btn}
+              variant="outline"
+              color="#DAFA66"
+              rightSection={<IconDownload size={20} />}
+            >
+              Download
+            </Button>
+          </div>
+        </div>
+        <div className="flex justify-center items-center h-fit w-fit rounded-full  bs:mr-10">
+          <NeonGradientCard className="w-[320px] h-[320px]  lg-mx:w-64  xsm-mx:w-56 xsm-mx:h-56  lg-mx:h-64 items-center justify-center text-center">
+            <img
+              className=" object-cover rounded-full  w-full object-top object-fit-cover h-full"
+              src={myImage}
+              alt="mypic"
+            />
+          </NeonGradientCard>
+        </div>
+      </div>
+      <ResumeViewer opened={opened} close={close} />
     </>
   );
 };

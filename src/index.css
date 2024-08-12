@@ -37,6 +37,20 @@
   font-weight: 500;
   font-style: italic;
 }
+html {
+  --primary-color: "#64FFDA";
+  scroll-behavior: smooth;
+}
 
-
-
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #112240;
+}
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: #112240;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #64ffda;
+}

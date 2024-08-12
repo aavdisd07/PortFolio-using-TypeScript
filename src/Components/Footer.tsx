@@ -1,12 +1,34 @@
-import { Info } from "../Users";
+import { Info, SocialLinks } from "../Users";
 
-const Footer=()=>{
-  return <div className="mx-36  mt-20 mb-10 font-mono  flex justify-center flex-col gap-2 items-center">
-  <div className="text-3xl text-primaryColor font-semibold"> Avantika Deshmukh </div>
-  <div className="text-textColor text-xl">Copyright &copy; {new Date().getFullYear()} Avantika Deshmukh | All Rights Reserved</div>
-  
+const Footer = () => {
+  const SocialIcons = SocialLinks.map((SocialLinks, index) => {
+    return (
+      <a
+        key={index}
+        href={`${SocialLinks.link}`}
+        target="_blank"
+        className="font-mono text-lg hover:text-primaryColor hover:scale-105 transition transform duration-300 ease-in-out"
+      >
+        <SocialLinks.icon stroke={1.5} size={25} />
+      </a>
+    );
+  });
 
-
-  </div>
-}
+  return (
+    <div className=" mt-20 mb-10 font-mono  flex justify-center flex-col gap-2 items-center">
+      <div className="text-3xl text-primaryColor font-semibold md-mx:text-2xl">
+        {" "}
+        Avantika Deshmukh{" "}
+      </div>
+      <div className="md-mx:flex hidden text-textColor gap-8 sm-mx:gap-6">
+        {SocialIcons}
+      </div>
+      <div className="text-textColor text-xl  md-mx:text-lg sm-mx:text-base xs-mx:text-sm xs-mx:flex  flex-col items-center">
+        Copyright &copy; {new Date().getFullYear()} Avantika Deshmukh{" "}
+        <span className="xs-mx:hidden"> |</span>{" "}
+        <span> All Rights Reserved</span>{" "}
+      </div>
+    </div>
+  );
+};
 export default Footer;
