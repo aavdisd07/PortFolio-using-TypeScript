@@ -25,142 +25,83 @@ const SocialLinks = [
 
 const ProjectInfo = [
   {
-    title: "Fresh Cart website  ",
-    desc: "Lorem ipsum, dolsit amet consectetur adipisicing elit. Reiciendis amet consectetur adipisicing elit. Reiciendissit amet consectetur adipisicing elit. Reiciendis amet consectetur adipisicing elit. Reiciendissit amet consectetur adipisicing elit. Reiciendis amet consectetur adipisicing elit. Reiciendisor sit amet consectetur adipisicing elit. Reiciendis praesentium laudantium dolore dolores aut assumenda ipsam vero harum. Quia, itaque?",
-    image:
-      "https://media.istockphoto.com/id/1492801310/photo/businessperson-updating-schedules-or-planning-business-online-appointment-time-management.jpg?s=2048x2048&w=is&k=20&c=zXdA-gPkzl_XzGM-W4QNn3ypSKZVZ6RawAwYq2-Yu0g=",
-    live: true,
-    technologies: ["React", "tailwindCSS", "Redux"],
-    link: "https://google.com",
-    github: "https://github/aavdisd07.com",
-  },
-  {
-    title: "helllo",
-    desc: "Lorem ipsum, dolor sit amet coipsum, dolor sit amet coipsum, dolor sit amet coipsum, dolor sit amet coipsum, dolor sit amet coipsum, dolor sit amet consectetur adipisicing elit. Reiciendis praesentium laudantium dolore dolores aut assumenda ipsam vero harum. Quia, itaque?",
-    image:
-      "https://media.istockphoto.com/id/1492801310/photo/businessperson-updating-schedules-or-planning-business-online-appointment-time-management.jpg?s=2048x2048&w=is&k=20&c=zXdA-gPkzl_XzGM-W4QNn3ypSKZVZ6RawAwYq2-Yu0g=",
+    "title": "Movies Mania",
+    "desc": "Developed a responsive website using JavaScript and API integration for real-time movie information retrieval, implementing search functionality to quickly access detailed movie data, and designed a dynamic user interface to ensure better user engagement and experience.",
+    "image": "https://www.lifewire.com/thmb/8ui_bFL5efGM-dP7u-43KPXuUes=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/freevee-free-movies-tv-62e787121edb42cb865ed43557c7b506.png",
+    "live": true,
+    "technologies": ["JavaScript", "API"],
+    "link": "https://aavdisd07.github.io/Movies-Mania-/",
+    "github": "https://github.com/aavdisd07/Movies-Mania-"
+},
+// {
+//     "title": "FreshCart",
+//     "desc": "Developed and deployed an intuitive online grocery store website using React JS and Tailwind CSS. The site features a user-friendly interface with dynamic product listings, interactive shopping cart functionality, and efficient state management. Implemented responsive design principles to ensure a seamless experience across various devices and integrated essential features such as product search, filters, and checkout processes.",
+//     "image": "https://media.istockphoto.com/id/1492801310/photo/businessperson-updating-schedules-or-planning-business-online-appointment-time-management.jpg?s=2048x2048&w=is&k=20&c=zXdA-gPkzl_XzGM-W4QNn3ypSKZVZ6RawAwYq2-Yu0g=",
+//     "live": false,
+//     "technologies": ["ReactJS", "Tailwind CSS"],
+//     "link": "https://google.com",
+//     "github": "https://github/aavdisd07.com"
+// },
+{
+    "title": "Shopping Store",
+    "desc": "Designed and implemented a comprehensive shopping website, utilizing HTML, CSS, and JavaScript to create dynamic and interactive user experiences, and developed essential features such as product listings, a shopping cart, and a streamlined checkout process to enhance the online shopping experience.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVdfWQ9o76_DVlHPlGdcI2QxCI8VDuZK6qCA&s",
+    "live": true,
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "link": "https://google.com",
+    "github": "https://github/aavdisd07.com"
+}
 
-    live: false,
-    technologies: ["React", "tailwindCSS", "Redux"],
-    link: "https://google.com",
-    github: "https://github/aavdisd07.com",
-  },
-  {
-    title: "helllo",
-    desc: "Lorem ipsum, sit amet consectetur adipisicing elit. Reiciendis amet consectetur adipisicing elit. Reiciendissit amet consectetur adipisicing elit. Reiciendis amet consectetur adipisicing elit. Reiciendissit amet consectetur adipisicing elit. Reiciendis amet consectetur adipisicing elit. Reiciendissit amet consectetur adipisicing elit. Reiciendis amet consectetur adipisicing elit. Reiciendissit amet consectetur adipisicing elit. Reiciendis amet consectetur adipisicing elit. Reiciendissit amet consectetur adipisicing elit. Reiciendis amet consectetur adipisicing elit. Reiciendisdolor sit amet consectetur adipisicing elit. Reiciendis praesentium laudantium dolore dolores aut assumenda ipsam vero harum. Quia, itaque?",
-    image:
-      "https://media.istockphoto.com/id/1492801310/photo/businessperson-updating-schedules-or-planning-business-online-appointment-time-management.jpg?s=2048x2048&w=is&k=20&c=zXdA-gPkzl_XzGM-W4QNn3ypSKZVZ6RawAwYq2-Yu0g=",
-
-    live: true,
-    technologies: ["React", "tailwindCSS", "Redux"],
-    link: "https://google.com",
-    github: "https://github/aavdisd07.com",
-  },
-  {
-    title: "helllo",
-    desc: "Loremsit amet consectetur adipisicing elit. Reiciendis amet consectetur adipisicing elit. Reiciendissit amet consectetur adipisicing elit. Reiciendis amet consectetur adipisicing elit. Reiciendissit amet consectetur adipisicing elit. Reiciendis amet consectetur adipisicing elit. Reiciendissit amet consectetur adipisicing elit. Reiciendis amet consectetur adipisicing elit. Reiciendis ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis praesentium laudantium dolore dolores aut assumenda ipsam vero harum. Quia, itaque?",
-    image:
-      "https://media.istockphoto.com/id/1492801310/photo/businessperson-updating-schedules-or-planning-business-online-appointment-time-management.jpg?s=2048x2048&w=is&k=20&c=zXdA-gPkzl_XzGM-W4QNn3ypSKZVZ6RawAwYq2-Yu0g=",
-
-    live: true,
-    technologies: ["React", "tailwindCSS", "Redux"],
-    link: "https://google.com",
-    github: "https://github/aavdisd07.com",
-  },
-  {
-    title: "helllo",
-    desc: "Lorem ipsum, dolor sit amet consesit amet consectetur adipisicing elit. Reiciendis amet consectetur adipisicing elit. Reiciendissit amet consectetur adipisicing elit. Reiciendis amet consectetur adipisicing elit. Reiciendissit amet consectetur adipisicing elit. Reiciendis amet consectetur adipisicing elit. Reiciendissit amet consectetur adipisicing elit. Reiciendis amet consectetur adipisicing elit. Reiciendissit amet consectetur adipisicing elit. Reiciendis amet consectetur adipisicing elit. Reiciendissit amet consectetur adipisicing elit. Reiciendis amet consectetur adipisicing elit. Reiciendissit amet consectetur adipisicing elit. Reiciendis amet consectetur adipisicing elit. Reiciendisctetur adipisicing elit. Reiciendis praesentium laudantium dolore dolores aut assumenda ipsam vero harum. Quia, itaque?",
-    image:
-      "https://media.istockphoto.com/id/1492801310/photo/businessperson-updating-schedules-or-planning-business-online-appointment-time-management.jpg?s=2048x2048&w=is&k=20&c=zXdA-gPkzl_XzGM-W4QNn3ypSKZVZ6RawAwYq2-Yu0g=",
-
-    live: true,
-    technologies: ["React", "tailwindCSS", "Redux"],
-    link: "https://google.com",
-    github: "https://github/aavdisd07.com",
-  },
-  {
-    title: "helllo jkjrejgj",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis amet consectetur adipisicing elit. Reiciendis amet consectetur adipisicing elit. Reiciendis amet consectetur adipisicing elit. Reiciendis amet consectetur adipisicing elit. Reiciendis amet consectetur adipisicing elit. Reiciendis amet consectetur adipisicing elit. Reiciendis amet consectetur adipisicing elit. Reiciendis praesentium laudantium dolore dolores aut assumenda ipsam vero harum. Quia, itaque?",
-    image:
-      "https://media.istockphoto.com/id/1492801310/photo/businessperson-updating-schedules-or-planning-business-online-appointment-time-management.jpg?s=2048x2048&w=is&k=20&c=zXdA-gPkzl_XzGM-W4QNn3ypSKZVZ6RawAwYq2-Yu0g=",
-
-    live: true,
-    technologies: ["React", "tailwindCSS", "Redux"],
-    link: "https://google.com",
-    github: "https://github/aavdisd07.com",
-  },
 ];
 
 const SkillInfo = [
   {
-    title: "Frontend",
-    skills: [
-      "Html",
-      "css",
-      "Html",
-      "css",
-      "Html",
-      "css",
-      "Html",
-      "css",
-      "Html",
-      "css",
-      "Html",
-      "css",
-    ],
-  },
-  {
-    title: "Frontend",
-    skills: [
-      "Html",
-      "css",
-      "Html",
-      "css",
-      "Html",
-      "css",
-      "Html",
-      "css",
-      "Html",
-      "css",
-      "Html",
-      "css",
-    ],
-  },
-  {
-    title: "Frontend",
-    skills: [
-      "Html",
-      "css",
-      "Html",
-      "css",
-      "Html",
-      "css",
-      "Html",
-      "css",
-      "Html",
-      "css",
-      "Html",
-      "css",
-    ],
-  },
+    "title": "Frontend Development",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "ReactJs",
+      "NextJs",
+      "TailwindCSS",
+      "Bootstrap",
+      "TypeScript"
+    ]
+},
+{
+    "title": "Backend Development",
+    "skills": [
+      "Java",
+      "C",
+      "SQL",
+      "Django",
+      "SpringBoot",
+      "Firebase"
+    ]
+},
+{
+    "title": "Full Stack Development",
+    "skills": [
+      "ReactJs",
+      "Django",
+      "Java",
+      "SpringBoot",
+      "MySQL",
+      "Firebase",
+      "TypeScript"
+    ]
+},
+{
+    "title": "Other Technologies",
+    "skills": [
+      "Python",
+      "CPP",
+      "Flutter",
+      "WordPress",
+      "Linux"
+    ]
+}
 
-  {
-    title: "Frontend",
-    skills: [
-      "Html",
-      "css",
-      "Html",
-      "css",
-      "Html",
-      "css",
-      "Html",
-      "css",
-      "Html",
-      "css",
-      "Html",
-      "css",
-    ],
-  },
 ];
 
 const ExperienceInfo = [

@@ -15,9 +15,3 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 export { db };
-// // Initialize Firebase
-// const app = initializeApp(firebaseConfig);
-// export const db= getFirestore(app);
-// function getFirestore(app: FirebaseApp) {
-//     throw new Error("Function not implemented.");
-// }

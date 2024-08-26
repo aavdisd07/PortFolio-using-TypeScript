@@ -57,7 +57,7 @@ const Contact = () => {
       id="Contact"
     >
       <h1 className="text-4xl mb-10 font-bold sm-mx:text-3xl xs-mx:text-2xl text-center text-white">
-        <span className="text-[#DAFA66]">05.&nbsp;</span>Contact
+        <span className="text-[#87CEEB]">05.&nbsp;</span>Contact
       </h1>
       <div
         data-aos="flip-down"

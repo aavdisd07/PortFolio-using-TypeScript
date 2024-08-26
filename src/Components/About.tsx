@@ -39,20 +39,20 @@ const [opened, { open, close }] = useDisclosure(false);
           className=" -z-20 absolute inset-0"
           quantity={500}
           ease={60}
-          color={"#C0C0C0"}
+          color={"#87CEEB"}
           size={2.5}
           refresh
         />
         <div className="bs:ml-10  bs:w-3/5 flex flex-col lg-mx:gap-3 bs-mx:items-center">
           <div className="text-3xl text-primaryColor lg-mx:text-2xl xs-mx:text-xl xsm-mx:text-lg">
-            Hii, I am
+            Hello there !, I am
           </div>
           <div className="text-transparent bg-gradient-to-t from-black to-gray-300/80 bg-clip-text  dark:from-white dark:to-slate-900/10 blend-darken  text-[4.25rem] font-bold  sm-mx:text-4xl xs-mx:text-3xl lg-mx:text-center lg-mx:text-5xl">
             Avantika Deshmukh
           </div>
           <div className=" text-white text-4xl flex font-semibold xs-mx:text-xl sm-mx:text-2xl lg-mx:text-[27px] xsm-mx:text-lg">
             I'm a &nbsp;
-            <span className="text-[#DAFA66]">
+            <span className="text-[#87CEEB]">
               <Typewriter
                 options={{ strings: Info.stack, autoStart: true, loop: true }}
               />

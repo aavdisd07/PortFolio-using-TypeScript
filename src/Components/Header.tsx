@@ -1,7 +1,7 @@
 import { IconAd } from "@tabler/icons-react";
 import SideBar from "./SideBar";
 import Particles from "./magicui/Particle";
-const links = ["About", "Work", "Experience", "Skills", "Contact"];
+const links = ["About", "Projects","Experience", "Skills", "Contact"];
 const navLinks = (col: Boolean, clicked: any) => {
   const handleClick = () => {
     if (clicked) clicked();
@@ -26,7 +26,7 @@ const navLinks = (col: Boolean, clicked: any) => {
 const Header = () => {
   return (
     <nav className="flex justify-between items-center bg-bgColor px-14 dm-mono-regular h-[10vh]">
-      <IconAd className="z-10" stroke={1.25} size={47} color="#DAFA66" />
+      <IconAd className="z-10" stroke={1.25} size={47} color="#87CEEB" />
       <div className="md:flex  gap-8 hidden ">{navLinks(false, null)}</div>
       <SideBar />
     </nav>
