@@ -30,7 +30,7 @@ const ProjectCard = (props: any) => {
     >
       <Card
         onClick={open}
-        className="!bg-bgColor cursor-pointer transition-transform duration-300 ease-in-out hover:!scale-[1.02] mb-5 hover:!shadow-[0_0_10px_1px_#64FFDA80] xs-mx:!shadow-[0_0_10px_1px_#64FFDA80] !border-primaryColor border-2"
+        className="!bg-bgColor cursor-pointer transition-transform duration-300 ease-in-out hover:!scale-[1.02] mb-5 hover:!shadow-[0_0_10px_1px_#9F6BA080] xs-mx:!shadow-[0_0_10px_1px_#9F6BA080] !border-[#9F6BA0] border-2"
         shadow="lg"
         padding="sm"
         radius="lg"
@@ -38,7 +38,7 @@ const ProjectCard = (props: any) => {
       >
         <Card.Section className="p-3">
           <Image
-            className="!rounded-xl !shadow-[0_0_5px_0_#64FFDA]"
+            className="!rounded-xl !shadow-[0_0_5px_0_#9F6BA0]"
             src={props.image}
             alt={props.image}
           />
@@ -71,7 +71,7 @@ const ProjectCard = (props: any) => {
           {props.technologies.map(
             (tech: string, index: number) =>
               index < 3 && (
-                <Badge key={index} size={badge} variant="light" color="#64FFDA">
+                <Badge key={index} size={badge} variant="light" color="#9F6BA0">
                   {tech}
                 </Badge>
               )
@@ -89,7 +89,7 @@ const ProjectCard = (props: any) => {
         <Button
           onClick={open}
           className=""
-          color="#64FFDA"
+          color="#9F6BA0"
           variant="outline"
           mt="md"
           radius="md"

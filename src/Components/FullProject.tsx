@@ -59,7 +59,7 @@ const FullProject = (props: any) => {
           />
           <Group mt="md" mb="md">
             {props.technologies.map((tech: string, index: number) => (
-              <Badge key={index} variant="light" size="xl" color="#64FADA">
+              <Badge key={index} variant="light" size="xl" color="#9F6BA0">
                 {tech}
               </Badge>
             ))}
@@ -85,7 +85,7 @@ const FullProject = (props: any) => {
               <Button
                 variant="outline"
                 size="lg"
-                color="#64FADA"
+                color="#9F6BA0"
                 fullWidth
                 mt="md"
                 radius="md"

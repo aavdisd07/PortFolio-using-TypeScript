@@ -35,7 +35,7 @@ const SideBar = () => {
       <Burger
         className="md:!hidden !z-10 "
         size={30}
-        color="#DAFA66"
+        color="#9F6BA0"
         opened={opened}
         onClick={toggle}
       />

@@ -11,7 +11,7 @@ import { IconDownload } from "@tabler/icons-react";
 import Particles from "./magicui/Particle";
 import { NeonGradientCard } from "./magicui/neon-gradient-card";
 const About = () => {
-const [opened, { open, close }] = useDisclosure(false);
+  const [opened, { open, close }] = useDisclosure(false);
 
   const btn = useMatches({
     xs: "xs",
@@ -22,15 +22,16 @@ const [opened, { open, close }] = useDisclosure(false);
   return (
     <>
       <Particles
-          className=" -z-20 absolute inset-0"
-          quantity={500}
-          ease={60}
-          color={"#C0C0C01"}
-          size={2.5}
-          refresh
-        />
+        className=" -z-20 absolute inset-0"
+        quantity={500}
+        ease={60}
+        color={"#C0C0C01"}
+        size={2.5}
+        refresh
+      />
       <div
-        className="flex relative overflow-hidden font-mono px-10 sm-mx:px-4 xs-mx:py-4 xs-mx:px-2 py-10 items-center justify-around h-fit lg-mx:justify-between bs-mx:flex-wrap bs-mx:flex-col-reverse  bs-mx:!overflow-visible bs-mx:gap-6 md-mx:px-6"
+        className="flex relative overflow-hidden font-mono px-10 sm-mx:px-4 xs-mx:py-4 xs-mx:px-2 py-10 items-center justify-around  !bg-[#000000] lg-mx:justify-between bs-mx:flex-wrap bs-mx:flex-col-reverse  bs-mx:!overflow-visible bs-mx:gap-6 md-mx:px-6"
+        style={{ height: "700px" }}
         id="bg"
         data-aos="fade-down"
         data-aos-duration="800"
@@ -39,20 +40,20 @@ const [opened, { open, close }] = useDisclosure(false);
           className=" -z-20 absolute inset-0"
           quantity={500}
           ease={60}
-          color={"#87CEEB"}
+          color={"#9F6BA0"}
           size={2.5}
           refresh
         />
         <div className="bs:ml-10  bs:w-3/5 flex flex-col lg-mx:gap-3 bs-mx:items-center">
           <div className="text-3xl text-primaryColor lg-mx:text-2xl xs-mx:text-xl xsm-mx:text-lg">
-            Hello there !, I am
+            Hi, I'm
           </div>
           <div className="text-transparent bg-gradient-to-t from-black to-gray-300/80 bg-clip-text  dark:from-white dark:to-slate-900/10 blend-darken  text-[4.25rem] font-bold  sm-mx:text-4xl xs-mx:text-3xl lg-mx:text-center lg-mx:text-5xl">
             Avantika Deshmukh
           </div>
           <div className=" text-white text-4xl flex font-semibold xs-mx:text-xl sm-mx:text-2xl lg-mx:text-[27px] xsm-mx:text-lg">
-            I'm a &nbsp;
-            <span className="text-[#87CEEB]">
+          a passionate &nbsp;
+            <span className="text-[#9F6BA0]">
               <Typewriter
                 options={{ strings: Info.stack, autoStart: true, loop: true }}
               />
@@ -65,12 +66,12 @@ const [opened, { open, close }] = useDisclosure(false);
             <Button
               // onClick={open}
               component="a"
-              href="https://github.com/aavdisd07/All-My-Certifications-/blob/main/Avantika_Resume.pdf" 
+              href="https://github.com/aavdisd07/All-My-Certifications-/blob/main/Avantika_Resume.pdf"
               target="_blank"
               className="  focus-visible:!outline-none !text-black !w-fit xs-mx:!w-[46%]"
               size={btn}
               variant="filled"
-              color="#DAFA66"
+              color="#9F6BA0"
             >
               Check Resume
             </Button>
@@ -81,7 +82,7 @@ const [opened, { open, close }] = useDisclosure(false);
               className="focus-visible:!outline-none !text-primaryColor !w-fit xs-mx:!w-[46%]"
               size={btn}
               variant="outline"
-              color="#DAFA66"
+              color="#9F6BA0 "
               rightSection={<IconDownload size={20} />}
             >
               Download

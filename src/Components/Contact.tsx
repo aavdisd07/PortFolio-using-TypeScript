@@ -57,7 +57,7 @@ const Contact = () => {
       id="Contact"
     >
       <h1 className="text-4xl mb-10 font-bold sm-mx:text-3xl xs-mx:text-2xl text-center text-white">
-        <span className="text-[#87CEEB]">05.&nbsp;</span>Contact
+        <span className="text-[#9F6BA0]">04.&nbsp;</span>Contact
       </h1>
       <div
         data-aos="flip-down"
@@ -105,7 +105,7 @@ const Contact = () => {
           onClick={handleSubmit}
           fullWidth
           variant="filled"
-          color="#DAFA66"
+          color="#9F6BA0"
           className="!text-bgColor !font-bold"
           rightSection={<IconArrowRight size={14} />}
           size={btn}
