@@ -1,6 +1,6 @@
 import Typewriter from "typewriter-effect";
 import { Info } from "../Users";
-import myImage from "../assets/myimg.jpg";
+import myImage from "../assets/myimg.jpeg";
 import { useMatches } from "@mantine/core";
 //@ts-ignore
 import Halo from "vanta/src/vanta.halo";
@@ -68,10 +68,11 @@ const About = () => {
               component="a"
               href="https://github.com/aavdisd07/All-My-Certifications-/blob/main/Avantika_Resume.pdf"
               target="_blank"
-              className="  focus-visible:!outline-none !text-black !w-fit xs-mx:!w-[46%]"
+              className="  focus-visible:!outline-none !text-white !w-fit xs-mx:!w-[46%]"
               size={btn}
               variant="filled"
               color="#9F6BA0"
+              
             >
               Check Resume
             </Button>
@@ -89,15 +90,15 @@ const About = () => {
             </Button>
           </div>
         </div>
-        <div className="flex justify-center items-center h-fit w-fit rounded-full  bs:mr-10">
-          <NeonGradientCard className="w-[320px] h-[320px]  lg-mx:w-64  xsm-mx:w-56 xsm-mx:h-56  lg-mx:h-64 items-center justify-center text-center">
-            <img
-              className=" object-cover rounded-full  w-full object-top object-fit-cover h-full"
-              src={myImage}
-              alt="mypic"
-            />
-          </NeonGradientCard>
-        </div>
+        <div className="flex justify-center items-center h-fit w-fit rounded-full bs:mr-10">
+  <NeonGradientCard className="w-[320px] h-[320px] lg-mx:w-64 xsm-mx:w-56 xsm-mx:h-56 lg-mx:h-64 items-center justify-center text-center">
+    <img
+      className="object-cover rounded-full w-full h-full"
+      src={myImage}
+      alt="mypic"
+    />
+  </NeonGradientCard>
+</div>
       </div>
       <ResumeViewer opened={opened} close={close} />
     </>
