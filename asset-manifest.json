@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/PortFolio-ASD/static/css/main.aee1dcb1.css",
-    "main.js": "/PortFolio-ASD/static/js/main.cc1501e7.js",
+    "main.css": "/PortFolio-ASD/static/css/main.56edbca6.css",
+    "main.js": "/PortFolio-ASD/static/js/main.79ed3bdc.js",
     "static/js/453.acca0757.chunk.js": "/PortFolio-ASD/static/js/453.acca0757.chunk.js",
+    "static/media/SSM.png": "/PortFolio-ASD/static/media/SSM.c01761a23bd3d179aff7.png",
     "static/media/myimg.jpeg": "/PortFolio-ASD/static/media/myimg.cdbfde4c14093a646593.jpeg",
+    "static/media/SS.png": "/PortFolio-ASD/static/media/SS.d556c96ae659f6bba83f.png",
     "static/media/Sql.png": "/PortFolio-ASD/static/media/Sql.96af83e68e3b32fb2dd7.png",
     "static/media/Linux.png": "/PortFolio-ASD/static/media/Linux.30b87c36aaec73885fd2.png",
     "static/media/MySql.png": "/PortFolio-ASD/static/media/MySql.4610cbabbff468ff8ae3.png",
     "index.html": "/PortFolio-ASD/index.html",
-    "main.aee1dcb1.css.map": "/PortFolio-ASD/static/css/main.aee1dcb1.css.map",
-    "main.cc1501e7.js.map": "/PortFolio-ASD/static/js/main.cc1501e7.js.map",
+    "main.56edbca6.css.map": "/PortFolio-ASD/static/css/main.56edbca6.css.map",
+    "main.79ed3bdc.js.map": "/PortFolio-ASD/static/js/main.79ed3bdc.js.map",
     "453.acca0757.chunk.js.map": "/PortFolio-ASD/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aee1dcb1.css",
-    "static/js/main.cc1501e7.js"
+    "static/css/main.56edbca6.css",
+    "static/js/main.79ed3bdc.js"
   ]
 }
