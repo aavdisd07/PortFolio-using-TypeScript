@@ -23,6 +23,7 @@ const Contact = () => {
     setFormData({ ...formData, [id]: value });
     setFormError({ ...formError, [id]: validateForm(id, value) });
   };
+
   const handleSubmit = async () => {
     let valid = true;
     let newFormError: { [key: string]: string } = {};

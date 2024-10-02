@@ -10,19 +10,46 @@ import ResumeViewer from "./ResumeViewer";
 import { IconDownload } from "@tabler/icons-react";
 import Particles from "./magicui/Particle";
 import { NeonGradientCard } from "./magicui/neon-gradient-card";
+import React, { useEffect, useRef } from "react"; // Import React and hooks
+
 const About = () => {
   const [opened, { open, close }] = useDisclosure(false);
-
   const btn = useMatches({
     xs: "xs",
     sm: "sm",
     md: "md",
     lg: "lg",
   });
+
+  const imageRef = useRef<HTMLImageElement | null>(null); // Create a ref for the image
+
+  useEffect(() => {
+    const handleContextMenu = (event: MouseEvent) => {
+      event.preventDefault(); // Prevent right-click menu from showing
+    };
+
+    const handleDragStart = (event: DragEvent) => {
+      event.preventDefault(); // Prevent dragging behavior
+    };
+
+    const imgElement = imageRef.current;
+    if (imgElement) {
+      imgElement.addEventListener('contextmenu', handleContextMenu);
+      imgElement.addEventListener('dragstart', handleDragStart);
+    }
+
+    return () => {
+      if (imgElement) {
+        imgElement.removeEventListener('contextmenu', handleContextMenu);
+        imgElement.removeEventListener('dragstart', handleDragStart);
+      }
+    };
+  }, []);
+
   return (
     <>
       <Particles
-        className=" -z-20 absolute inset-0"
+        className="-z-20 absolute inset-0"
         quantity={500}
         ease={60}
         color={"#C0C0C01"}
@@ -30,14 +57,14 @@ const About = () => {
         refresh
       />
       <div
-        className="flex relative overflow-hidden font-mono px-10 sm-mx:px-4 xs-mx:py-4 xs-mx:px-2 py-10 items-center justify-around  !bg-[#000000] lg-mx:justify-between bs-mx:flex-wrap bs-mx:flex-col-reverse  bs-mx:!overflow-visible bs-mx:gap-6 md-mx:px-6"
+        className="flex relative overflow-hidden font-mono px-10 sm-mx:px-4 xs-mx:py-4 xs-mx:px-2 py-10 items-center justify-around !bg-[#000000] lg-mx:justify-between bs-mx:flex-wrap bs-mx:flex-col-reverse  bs-mx:!overflow-visible bs-mx:gap-6 md-mx:px-6"
         style={{ height: "700px" }}
         id="bg"
         data-aos="fade-down"
         data-aos-duration="800"
       >
         <Particles
-          className=" -z-20 absolute inset-0"
+          className="-z-20 absolute inset-0"
           quantity={500}
           ease={60}
           color={"#9F6BA0"}
@@ -52,7 +79,7 @@ const About = () => {
             Avantika Deshmukh
           </div>
           <div className=" text-white text-4xl flex font-semibold xs-mx:text-xl sm-mx:text-2xl lg-mx:text-[27px] xsm-mx:text-lg">
-          a passionate &nbsp;
+            a passionate &nbsp;
             <span className="text-[#9F6BA0]">
               <Typewriter
                 options={{ strings: Info.stack, autoStart: true, loop: true }}
@@ -64,15 +91,13 @@ const About = () => {
           </div>
           <div className="flex gap-3">
             <Button
-              // onClick={open}
               component="a"
               href="https://github.com/aavdisd07/All-My-Certifications-/blob/main/Avantika_Resume.pdf"
               target="_blank"
-              className="  focus-visible:!outline-none !text-white !w-fit xs-mx:!w-[46%]"
+              className="focus-visible:!outline-none !text-white !w-fit xs-mx:!w-[46%]"
               size={btn}
               variant="filled"
               color="#9F6BA0"
-              
             >
               Check Resume
             </Button>
@@ -91,14 +116,16 @@ const About = () => {
           </div>
         </div>
         <div className="flex justify-center items-center h-fit w-fit rounded-full bs:mr-10">
-  <NeonGradientCard className="w-[320px] h-[320px] lg-mx:w-64 xsm-mx:w-56 xsm-mx:h-56 lg-mx:h-64 items-center justify-center text-center">
-    <img
-      className="object-cover rounded-full w-full h-full"
-      src={myImage}
-      alt="mypic"
-    />
-  </NeonGradientCard>
-</div>
+          <NeonGradientCard className="w-[320px] h-[320px] lg-mx:w-64 xsm-mx:w-56 xsm-mx:h-56 lg-mx:h-64 items-center justify-center text-center">
+            <img
+              ref={imageRef} // Set the ref on the image
+              className="object-cover rounded-full w-full h-full"
+              src={myImage}
+              alt="mypic"
+              draggable={false} // Disable dragging
+            />
+          </NeonGradientCard>
+        </div>
       </div>
       <ResumeViewer opened={opened} close={close} />
     </>
